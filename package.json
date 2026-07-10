@@ -1,0 +1,17 @@
+{
+  "name": "stratum-dtl",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "JavaScript integration checks for the StratumDTL Rust liquidity-layering library.",
+  "scripts": {
+    "test": "node --test \"tests/node/*.test.js\"",
+    "test:rust": "cargo test --locked",
+    "test:all": "cargo fmt --all -- --check && cargo build --all-targets --locked && cargo test --locked && cargo clippy --all-targets --all-features --locked -- -D warnings && node --test \"tests/node/*.test.js\"",
+    "ci": "bash scripts/ci.sh",
+    "tests:script": "bash scripts/tests.sh"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}

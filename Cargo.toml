@@ -1,0 +1,19 @@
+[package]
+name = "stratum_dtl"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.96"
+publish = false
+description = "Rust liquidity layering library for tranche-based distributed transfer ledgers."
+license = "MIT"
+
+[lib]
+name = "stratum_dtl"
+path = "src/lib.rs"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "2.0"
+
+[dev-dependencies]
