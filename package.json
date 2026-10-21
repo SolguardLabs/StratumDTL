@@ -1,6 +1,6 @@
 {
   "name": "stratum-dtl",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "description": "JavaScript integration checks for the StratumDTL Rust liquidity-layering library.",
