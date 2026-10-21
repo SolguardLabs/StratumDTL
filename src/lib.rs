@@ -22,6 +22,7 @@ pub mod simulation;
 pub mod snapshot;
 pub mod stress;
 pub mod tranche;
+pub mod treasury;
 pub mod vault;
 
 pub use accounts::{AccountPosition, AccountState, PositionDelta, PositionStatus};
@@ -57,6 +58,7 @@ pub use simulation::{
 pub use snapshot::{AccountSnapshot, TrancheSnapshot, VaultSnapshot};
 pub use stress::{StressEngine, StressResult, StressScenario, StressShock};
 pub use tranche::{LossPriority, TrancheConfig, TrancheKind, TranchePolicy, TrancheState};
+pub use treasury::{Commitment, LiquidityForecast, LiquidityForecaster, TrancheCoverage};
 pub use vault::{
     DepositReceipt, LossAllocation, LossReceipt, RedemptionMode, RedemptionPlan, RedemptionReceipt,
     VaultConfig, VaultState,
